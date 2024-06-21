@@ -93,9 +93,6 @@ img {
   font-size: 14px;
 }
 
-#gallery {
-  /*	min-height: 100vh; */
-}
 .title {
   text-align: center;
   padding-block: 2em;
@@ -245,25 +242,7 @@ input[type='submit'] {
   padding: 0.5em 1em;
 }
 
-@media all and (max-width: 1180px) {
-  .picture {
-    flex: 2;
-  }
-  #about,
-  #contact .container {
-    align-items: center;
-  }
-  .about-me__title {
-    margin-top: 0;
-    margin-bottom: 1em;
-  }
-  #about-me h6,
-  #about-me p {
-    width: 100%;
-  }
-}
-
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1024px) {
   #about {
     flex-direction: column;
   }
@@ -321,7 +300,7 @@ input[type='submit'] {
   }
 }
 
-@media all and (max-width: 650px) {
+@media all and (max-width: 767px) {
   .top-header {
     flex-direction: column;
     padding-inline: 0;
