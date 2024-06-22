@@ -7,20 +7,6 @@ body {
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Inter';
-  src: url('https://fonts.gstatic.com/s/inter/v13/rnCr-xNNw.woff2')
-    format('woff2');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Spectral';
-  src: url('https://fonts.gstatic.com/s/spectral/v13/UcCO3FwrK.woff2')
-    format('woff2');
-  font-display: swap;
-}
-
 .top-header {
   background-color: white;
   position: sticky;
