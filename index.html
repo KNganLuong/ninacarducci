@@ -3,27 +3,71 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+
+	<style>
+		/* Critical CSS */
+		body {
+			margin: 0;
+			font-family: 'Inter', sans-serif;
+			background-color: #fff;
+			color: #212529;
+		}
+
+		.top-header {
+			background: #f8f9fa;
+			padding: 10px 0;
+			text-align: center;
+		}
+
+		.top-header h3.name {
+			margin: 0;
+		}
+
+		.nav ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			justify-content: center;
+		}
+
+		.nav ul li {
+			margin: 0 10px;
+		}
+
+		.nav ul li a {
+			text-decoration: none;
+			color: #0d6efd;
+		}
+	</style>
+
+	<!-- Bootstrap CSS with non-blocking load -->
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrapmin.css" media="print"
 		onload="this.onload=null;this.media='all'">
 	<noscript>
 		<link rel="stylesheet" href="./assets/bootstrap/bootstrapmin.css">
 	</noscript>
 	<link rel="stylesheet" href="./assets/style.css">
+
+	<!-- Preconnect to improve font loading performance -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<!-- Preload and use font-display: swap for Google Fonts -->
 	<link rel="preload"
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
 		as="style" crossorigin>
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-		rel="stylesheet" media="print" onload="this.media='all'">
+		rel="stylesheet" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-			Devenir rel="stylesheet">
+			rel="stylesheet">
 	</noscript>
 
-	<meta charset="UTF-8">
+	<!-- Defer JavaScript loading -->
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
@@ -41,7 +85,7 @@
 				<li><a href="#services">Service</a></li>
 				<li><a href="#contact">Contact</a></li>
 				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img
-							src="assets/images/instagram.png" alt=""></a></li>
+							src="assets/images/instagram.png" alt="InstagramLogo" width="24" height="24"></a></li>
 			</ul>
 		</div>
 	</div>
@@ -58,13 +102,16 @@
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img src="./assets/images/slider/ryoji-iwata.webp" class="d-block w-100" alt="...">
+					<img src="./assets/images/slider/ryoji-iwata.webp" class="d-block w-100" alt="ryoji-iwata" width="1900"
+						height="880">
 				</div>
 				<div class="carousel-item">
-					<img src="./assets/images/slider/nicholas-green.webp" class="d-block w-100" alt="...">
+					<img src="./assets/images/slider/nicholas-green.webp" class="d-block w-100" alt="nicholas-green"
+						width="1900" height="880">
 				</div>
 				<div class="carousel-item">
-					<img src="./assets/images/slider/edward-cisneros.webp" class="d-block w-100" alt="...">
+					<img src="./assets/images/slider/edward-cisneros.webp" class="d-block w-100" alt="edward-cisneros"
+						width="1900" height="880">
 				</div>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -81,7 +128,7 @@
 	</div>
 	<div id="about">
 		<div class="picture left">
-			<img src="./assets/images/nina.webp">
+			<img src="./assets/images/nina.webp" alt="Nina Carducci" width="550" height="550">
 		</div>
 		<div id="about-me">
 			<h3 class="about-me__title">A propos de moi</h3>
@@ -195,7 +242,7 @@
 				</form>
 			</div>
 			<div class="picture right">
-				<img src="./assets/images/camera.webp">
+				<img src="./assets/images/camera.webp" alt="Camera" width="800" height="600">
 			</div>
 		</div>
 	</div>
