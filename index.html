@@ -78,6 +78,20 @@
 			rel="stylesheet">
 	</noscript>
 
+	<style>
+		@font-face {
+			font-family: 'Inter';
+			src: url('https://fonts.gstatic.com/s/inter/v13/rnCr-xNNw.woff2') format('woff2');
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: 'Spectral';
+			src: url('https://fonts.gstatic.com/s/spectral/v13/UcCO3FwrK.woff2') format('woff2');
+			font-display: swap;
+		}
+	</style>
+
 	<!-- Defer JavaScript loading -->
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -96,7 +110,7 @@
 				<li><a href="#services">Service</a></li>
 				<li><a href="#contact">Contact</a></li>
 				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img
-							src="assets/images/instagram.png" alt="InstagramLogo" width="24" height="24"></a></li>
+							src="assets/images/instagram.png" alt="InstagramLogo" width="40" height="40"></a></li>
 			</ul>
 		</div>
 	</div>
@@ -113,16 +127,16 @@
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img src="./assets/images/slider/ryoji-iwata.webp" class="d-block w-100" alt="ryoji-iwata" width="1900"
-						height="880">
+					<img src="./assets/images/slider/ryoji-iwata.webp" class="d-block w-100" alt="ryoji-iwata" width="1335"
+						height="617">
 				</div>
 				<div class="carousel-item">
 					<img src="./assets/images/slider/nicholas-green.webp" class="d-block w-100" alt="nicholas-green"
-						width="1900" height="880">
+						width="1335" height="617">
 				</div>
 				<div class="carousel-item">
 					<img src="./assets/images/slider/edward-cisneros.webp" class="d-block w-100" alt="edward-cisneros"
-						width="1900" height="880">
+						width="1335" height="617">
 				</div>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -139,7 +153,7 @@
 	</div>
 	<div id="about">
 		<div class="picture left">
-			<img src="./assets/images/nina.webp" alt="Nina Carducci" width="550" height="550">
+			<img src="./assets/images/nina.webp" alt="Nina Carducci" width="365" height="550">
 		</div>
 		<div id="about-me">
 			<h3 class="about-me__title">A propos de moi</h3>
@@ -253,10 +267,18 @@
 				</form>
 			</div>
 			<div class="picture right">
-				<img src="./assets/images/camera.webp" alt="Camera" width="800" height="600">
+				<img src="./assets/images/camera.webp" alt="Camera" width="419" height="418">
 			</div>
 		</div>
 	</div>
+
+	<script>
+		window.addEventListener('load', function () {
+			var script = document.createElement('script');
+			script.src = './assets/nonessential.js';
+			document.body.appendChild(script);
+		});
+	</script>
 </body>
 
 </html>
