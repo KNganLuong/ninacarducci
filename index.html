@@ -10,15 +10,51 @@
 	<meta name="description"
 		content="Nina Carducci : jeune photographe qui souhaite vous partager les grands moments de bonheur." />
 
+	<style>
+		body {
+			max-width: 1920px;
+			margin: auto;
+		}
+
+		.top-header {
+			background-color: white;
+			position: sticky;
+			top: 0;
+			z-index: 1000;
+			display: flex;
+			justify-content: space-between;
+			padding-inline: 100px;
+			padding-block: 30px;
+			align-items: center;
+		}
+
+		.top-header .name {
+			font-size: 26px;
+		}
+
+		.nav ul {
+			display: flex;
+			list-style-type: none;
+			font-size: 14px;
+			margin-bottom: 0;
+		}
+
+		.nav li {
+			padding-inline: 10px;
+		}
+
+		.nav a {
+			text-decoration: none;
+			color: #000;
+		}
+	</style>
+
 	<title>Porfolio de Nina Carducci</title>
 
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrapmin.css" media="print"
 		onload="this.onload=null;this.media='all'">
 
-	<link rel="preload" href="assets/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript>
-		<link rel="stylesheet" href="assets/style.css">
-	</noscript>
+	<link rel="stylesheet" href="./assets/style.css">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
